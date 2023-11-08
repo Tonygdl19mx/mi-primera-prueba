@@ -1,0 +1,135 @@
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+nav{
+    display: flex ; 
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.navegar{
+    background:#190482;
+    display: inline-block;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.navegar:hover{
+    background: #6098be;
+}
+
+button{
+    background:#cccccd ;
+    color: rgb(0, 0, 0);
+}
+button:hover{
+    background:#4d4d4d ;
+    color: white;
+}
+button:active{
+    background: rgb(26, 130, 190);
+}
+
+.principal{
+    background:#045d7e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.columnas{
+    display: flex;
+}
+
+.menu1{
+    background:#ffffff;
+    color:#000000;
+    padding: 20px;
+    display: inline-block;
+    margin: 10px; 
+    text-align: justify; 
+}
+
+.boton1{
+    background:salmon ;
+    color: white;
+    padding: 15px;
+    border: 6px solid red;
+    display: none;
+}
+
+.boton1:hover{
+    background:#4d4d4d ;
+    color: white;
+}
+
+.boton1:active{
+    background: rgb(26, 130, 190);
+}
+
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.costo{
+    font-size: 50px;
+    color: red;
+}
+
+.precios{
+    background: rgb(229, 229, 229);
+    color: #333;
+    border: 3px solid #333;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 25px;
+    width: 30%;
+    box-shadow: 10px 10px 10px rgb(58, 58, 58);
+    box-sizing: border-box;
+}
+
+.btn-precio{
+    background: salmon;
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-precio:hover{
+    background: rgb(234, 163, 156);
+}
+
+@media (max-width: 600px) {
+        nav{
+            flex-direction: column;
+        }
+        .navegar{
+            margin: 10px 0px;
+        }
+        .boton1{
+            display: inline-block;
+        }        
+        .precios{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+@media (max-width: 800px){
+    .precios{
+        width: 60%;
+        margin-bottom: 30px;
+    }
+}
+    
